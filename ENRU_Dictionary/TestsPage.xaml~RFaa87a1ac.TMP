@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="ENRU_Dictionary.TestsPage"
+             Title="Test">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="AliceBlue">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word1" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord1" Grid.Column="1"/>
+                    <Image x:Name="imgWord1" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word2" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord2" Grid.Column="1"/>
+                    <Image x:Name="imgWord2" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word3" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord3" Grid.Column="1"/>
+                    <Image x:Name="imgWord3" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word4" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord4" Grid.Column="1"/>
+                    <Image x:Name="imgWord4" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word5" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord5" Grid.Column="1"/>
+                    <Image x:Name="imgWord5" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word6" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord6" Grid.Column="1"/>
+                    <Image x:Name="imgWord6" Grid.Column="2"/>
+                </Grid>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="30"/>
+                    </Grid.ColumnDefinitions>
+                    <Label x:Name="word7" FontSize="15" FontAttributes="Bold" Margin="7" HorizontalOptions="CenterAndExpand"/>
+                    <Editor x:Name="edWord7" Grid.Column="1"/>
+                    <Image x:Name="imgWord7" Grid.Column="2"/>
+                </Grid>
+                <Label Text=""/>
+                <Button x:Name="btCheck" Text="Check" HorizontalOptions="CenterAndExpand" WidthRequest="370"
+                    BackgroundColor="AliceBlue"
+                    CornerRadius="5"
+                    BorderWidth="2"
+                    BorderColor="Silver"
+                    TextColor="Black"
+                        ImageSource="check.png"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gEPtc6Lz2bsNUOnll2qPsb4VQx42ZLlq41FQoplDhDZvYJ78Rr2RATdI3k+cA0etjckac7JuFhtVbbl15NkawQ==",
+  "success": true,
+  "projectFilePath": "D:\\CSharp\\Projects\\Mobile\\ENRU_Dictionary\\ENRU_Dictionary\\ENRU_Dictionary.iOS\\ENRU_Dictionary.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\s.ishmuratov\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+  ],
+  "logs": []
+}

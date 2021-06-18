@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ENRU_Dictionary.WordsPage"
+             Title="Dictionary">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Test" IconImageSource="test.png" Clicked="TestsButton_Clicked"/>
+        <ToolbarItem Text="+" IconImageSource="plus.png"
+                     Clicked="OnNoteAddedClicked" />
+    </ContentPage.ToolbarItems>
+    <StackLayout BackgroundColor="AliceBlue">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="30"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <Label Text="English" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="0" Margin="10"/>
+            <Image Source="english.png" Grid.Column="0" HorizontalOptions="Start" HeightRequest="30" Margin="7"/>
+            <Label Text="Русский" FontAttributes="Bold" HorizontalOptions="Center" Grid.Column="1" Margin="10"/>
+            <Image Source="russian.jpg" Grid.Column="1" HorizontalOptions="Start" HeightRequest="30" Margin="7"/>
+        </Grid>
+        <ListView x:Name="listView" Margin="5" SeparatorColor="Silver" ItemSelected="OnListViewItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="AliceBlue" Orientation="Vertical">
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="*" />
+                                    <ColumnDefinition Width="30"/>
+                                </Grid.ColumnDefinitions>
+                                <Button  Text="{Binding English}" Grid.Column="0" BorderWidth="0" Clicked="btSound_Clicked"
+                                CornerRadius="5"
+                                BorderColor="Silver"
+                                TextColor="Black"
+                                BackgroundColor="White"
+                                FontSize="13" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="200"/>
+                                <Button  Text="{Binding Russian}" Grid.Column="1" BorderWidth="0" Clicked="btSound_Clicked"
+                                CornerRadius="5"
+                                BorderColor="Silver"
+                                TextColor="DarkBlue"
+                                BackgroundColor="White"
+                                FontSize="13" FontAttributes="Bold" HorizontalOptions="Center" WidthRequest="200"/>
+                                <Image Source="edit.png" Grid.Column="2" HorizontalOptions="Center"/>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Frame OutlineColor="Black">
+            <StackLayout>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="50" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="40" />
+                    </Grid.RowDefinitions>
+                    <Editor x:Name="editorWords" Grid.Column="0"/>
+                    <Button Grid.Column="1" ImageSource="google_small.png" BackgroundColor="Transparent" Clicked="btOpenGTranslate"/>
+                </Grid>
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</ContentPage>
